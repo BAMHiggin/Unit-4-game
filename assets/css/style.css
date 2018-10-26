@@ -1,0 +1,102 @@
+body {
+    background: url(../images/background_img.jpg);
+    font-family: 'Mali', cursive;
+}
+
+.container-fluid {
+    padding-top: 20px;
+    padding-left: 50px;
+    
+}
+/* row 1 */
+#title-row {
+    font-size: 50px;
+    border-style: dashed;
+    width: fit-content;
+    background-color: rgb(190, 109, 16);
+    color: cornsilk;
+}
+/* row 2 */
+#instruction-row {
+    font-size: 20px;
+    border-style: dashed;
+    width: 700px;
+    word-wrap: break-word;
+    background-color: burlywood;
+    color:rgb(42, 133, 23);
+}
+
+#good-luck {
+    font-size: 30px;
+    font-variant-caps: all-small-caps; 
+}
+/* row 3 */
+#random-row {
+    font-size: 20px;
+    border-style: dashed; 
+    background-color: rgb(42, 133, 23);
+    color:burlywood;
+}
+
+#winLoss-col {
+    font-size: 20px;
+    border-style: dashed; 
+    background-color: rgb(42, 133, 23);
+    color:burlywood;
+
+}
+
+/* row 4 - gems */
+.gemSize {
+    height: 150px;
+    width: 150px;
+
+}
+
+/* row 5 & 6 */
+#scoreTitle-row {
+    font-size: 20px;
+    border-style: dashed; 
+    background-color: rgb(88, 18, 88);
+    color:burlywood;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#score-row {
+    font-size: 20px;
+    border-style: dashed; 
+    background-color: rgb(88, 18, 88);
+    color:burlywood;
+    padding-top: 5px;
+ 
+}
+
+
+
+
+/* 
+.menu-container {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: 'Mali', cursive;
+    flex-wrap: ;
+    flex-direction: column;
+
+}
+
+#title-box {
+    background-color: rgb(190, 109, 16);
+    border-style: double;
+    border-width: 5px;
+    border-color: chocolate;
+    color: cornsilk;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+} */
+
+
+
+
