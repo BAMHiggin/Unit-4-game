@@ -1,4 +1,4 @@
-Crystal Collector Game
+Gem Jam Game
 
 Goal
 
