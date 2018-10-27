@@ -1,6 +1,7 @@
 body {
     background: url(../images/background_img.jpg);
     font-family: 'Mali', cursive;
+    padding-bottom: 20%;
 }
 
 .container-fluid {
@@ -50,6 +51,8 @@ body {
 .gemSize {
     height: 150px;
     width: 150px;
+    border-style: dashed;
+    color:  rgb(88, 18, 88);
 
 }
 
@@ -61,6 +64,7 @@ body {
     color:burlywood;
     padding-top: 5px;
     padding-bottom: 5px;
+    width: 700px;
 
 }
 #score-row {
@@ -69,6 +73,7 @@ body {
     background-color: rgb(88, 18, 88);
     color:burlywood;
     padding-top: 5px;
+    width: 700px;
  
 }
 
