@@ -68,7 +68,8 @@ body {
 
 }
 #score-row {
-    font-size: 20px;
+    font-size: 50px;
+    font-weight: 300;
     border-style: dashed; 
     background-color: rgb(88, 18, 88);
     color:burlywood;
@@ -76,6 +77,8 @@ body {
     width: 700px;
  
 }
+
+
 
 
 

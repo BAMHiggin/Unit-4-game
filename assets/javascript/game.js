@@ -11,6 +11,7 @@ $(document).ready(function () { // event signals that DOM is ready
     var redGem = "";
     var totalPoints = 0;
 
+
     // formulas for random numbers
     function gameStart() {
         randomNumber = Math.floor(Math.random() * 101) + 19;
@@ -18,45 +19,65 @@ $(document).ready(function () { // event signals that DOM is ready
         redGem = Math.floor(Math.random() * 11) + 1;
         yellowGem = Math.floor(Math.random() * 11) + 1;
         greenGem = Math.floor(Math.random() * 11) + 1;
+        display();
+
 
     };
     gameStart();
 
 
     //win or loss logic
-    if (totalPoints === randomNumber) {
-        alert("WIN");
-        wins++;
-        reset();
+    function isGameOver() { //isGameOver should be called after each click event
+        if (totalPoints === randomNumber) {
+            alert("Winner winner, gems for dinner!");
+            wins++;
+            reset(); // reset re-runs game start and sets score to 0
 
-    } else if (totalPoints > randomNumber) {
-        alert("You Lose!");
-        losses++;
-        reset();
-    }
-
+        } else if (totalPoints > randomNumber) {
+            alert("NO GEMS FOR YOU!");
+            losses++;
+            reset();
+        }
+    };
 
 
     // gem button click events
-    $("#blueGem").click(function() {
+    $("#blueGem").click(function () {
         totalPoints += blueGem; //adding mystery gem value to total points score
         console.log(blueGem);
+        display();
+        isGameOver();
+
     });
-    $("#redGem").click(function() {
+    $("#redGem").click(function () {
         totalPoints += redGem;
         console.log(redGem);
+        display();
+        isGameOver();
     });
-    $("#yellowGem").click(function() {
-        totalPoints += yellowGem; 
+    $("#yellowGem").click(function () {
+        totalPoints += yellowGem;
         console.log(yellowGem);
+        display();
+        isGameOver();
     });
-    $("#greenGem").click(function() {
-        totalPoints += greenGem; 
+    $("#greenGem").click(function () {
+        totalPoints += greenGem;
         console.log(greenGem);
+        display();
+        isGameOver();
     });
 
 
+    //html outputs for score, computer generated number, gems, wins/losses
+    function display() {
 
+        $("#score-row").text(totalPoints);
+        $("#computerNumber").text("Random Number: " + randomNumber);
+        $("#wins").text("Wins: " + wins);
+        $("#losses").text("Losses: " + losses);
+
+    }
 
 
 
@@ -66,11 +87,11 @@ $(document).ready(function () { // event signals that DOM is ready
         gameStart();
     }
 
-//testing space
-    console.log(blueGem);
-    console.log(redGem);
-    console.log(greenGem);
-    console.log(yellowGem);
+    //testing space
+    // console.log(blueGem);
+    // console.log(redGem);
+    // console.log(greenGem);
+    // console.log(yellowGem);
 
 
 
