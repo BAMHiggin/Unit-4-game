@@ -44,26 +44,22 @@ $(document).ready(function () { // event signals that DOM is ready
     // gem button click events
     $("#blueGem").click(function () {
         totalPoints += blueGem; //adding mystery gem value to total points score
-        console.log(blueGem);
         display();
         isGameOver();
 
     });
     $("#redGem").click(function () {
         totalPoints += redGem;
-        console.log(redGem);
         display();
         isGameOver();
     });
     $("#yellowGem").click(function () {
         totalPoints += yellowGem;
-        console.log(yellowGem);
         display();
         isGameOver();
     });
     $("#greenGem").click(function () {
         totalPoints += greenGem;
-        console.log(greenGem);
         display();
         isGameOver();
     });
